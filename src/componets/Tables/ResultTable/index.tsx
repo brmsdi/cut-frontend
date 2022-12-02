@@ -36,7 +36,7 @@ const ResultTable = () => {
                   ></i>
                 </td>
                 <td>{convertBytes(item.filesize)}</td>
-                <td className="td-down">
+                <td>
                   <div className="box-3">
                     <a
                       className="btn-modern btn-down"

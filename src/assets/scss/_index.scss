@@ -1,8 +1,10 @@
-@media screen and (min-width: 20em) {
+@media screen and (min-width: 15em) {
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+    color: $--color-v1;
   }
 
   ::-webkit-scrollbar {
@@ -22,7 +24,7 @@
     align-items: center;
     justify-content: space-between;
     height: 10vh;
-    color: rgba(255, 255, 255, 0.8);
+    color: $--color-v1;
     margin: 0 10%;
 
     h1 {
@@ -31,7 +33,7 @@
 
     .icon-header {
       font-size: 22pt;
-      color: white;
+      color: $--color-v1;
     }
   }
 
@@ -40,11 +42,11 @@
     border: 0.1mm solid rgba(255, 255, 255, 0.8);
     border-radius: 0.5%;
     width: 100%;
+    padding: .4rem;
     padding-top: 1rem;
   }
 
   main {
-    padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -52,51 +54,29 @@
     .main-content {
       width: 100%;
       margin-bottom: 1rem;
+      padding: 0 .5rem;
     }
   }
 
   .header-result {
-    padding: 0.5rem;
-    margin-bottom: 0.5rem;
-    border-radius: 1rem;
-    .header-title {
-      font-weight: 600;
-      font-style: italic;
-    }
+    width: 100%;
+    background-size: cover;
+    font-size: 11pt;
     p {
-      padding: 0.1rem;
+      padding: .3rem;
       margin: 0;
     }
   }
 
-  .header-row.video-thumb {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .header-title {
+    font-style: italic;
+    letter-spacing: .09rem;
+    font-weight: 600;
+    color: $--color-v12;
   }
 
-  .frame-video {
-    background-color: $home-background;
-    padding: 0.5rem 0;
-    position: relative;
-    cursor: pointer;
-    color: $--color-play;
-    transition: color 400ms ease-in-out;
-    &:hover {
-      color: $--color-play-hover;
-    }
-    img {
-      width: 13rem;
-      height: 7.5rem;
-      max-width: 13rem;
-      max-height: 7.5rem;
-    }
-    .play-icon {
-      position: absolute;
-      top: 25%;
-      left: 40%;
-      font-size: 40pt;
-    }
+  .header-value {
+    padding-left: .9rem!important;
   }
 
   .mute {
@@ -108,15 +88,7 @@
   main {
     .main-content {
       width: 65%;
-    }
-  }
-
-  .frame-video {
-    img {
-      width: 18rem;
-      height: 10rem;
-      max-width: 18rem;
-      max-height: 10rem;
+      padding: 0;
     }
   }
 }

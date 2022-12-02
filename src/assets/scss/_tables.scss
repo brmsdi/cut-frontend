@@ -1,8 +1,9 @@
 .table-result {
-    background-color: #fff;
-    padding: 1rem;
-    border-radius: 1rem;
     width: 100%;
+}
+
+td {
+    color: $--color-v13!important;
 }
 
 .td-type {
@@ -13,10 +14,4 @@
     color: $--color-mute-icon;
     font-size: 15pt;
     margin: auto .5rem; 
-}
-//66A182
-//41383b
-//13293d
-.td-down {
-    background-color: #13293d!important;
 }
