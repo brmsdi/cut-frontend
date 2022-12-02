@@ -1,0 +1,122 @@
+@media screen and (min-width: 20em) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  #root {
+    min-height: 100vh;
+  }
+
+  body {
+    background-color: $home-background;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0 10%;
+
+    h1 {
+      font-size: 17pt;
+    }
+
+    .icon-header {
+      font-size: 22pt;
+      color: white;
+    }
+  }
+
+  .container-md {
+    min-height: 76vh;
+    border: 0.1mm solid rgba(255, 255, 255, 0.8);
+    border-radius: 0.5%;
+    width: 100%;
+    padding-top: 1rem;
+  }
+
+  main {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .main-content {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .header-result {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 1rem;
+    .header-title {
+      font-weight: 600;
+      font-style: italic;
+    }
+    p {
+      padding: 0.1rem;
+      margin: 0;
+    }
+  }
+
+  .header-row.video-thumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .frame-video {
+    background-color: $home-background;
+    padding: 0.5rem 0;
+    position: relative;
+    cursor: pointer;
+    color: $--color-play;
+    transition: color 400ms ease-in-out;
+    &:hover {
+      color: $--color-play-hover;
+    }
+    img {
+      width: 13rem;
+      height: 7.5rem;
+      max-width: 13rem;
+      max-height: 7.5rem;
+    }
+    .play-icon {
+      position: absolute;
+      top: 25%;
+      left: 40%;
+      font-size: 40pt;
+    }
+  }
+
+  .mute {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 30em) {
+  main {
+    .main-content {
+      width: 65%;
+    }
+  }
+
+  .frame-video {
+    img {
+      width: 18rem;
+      height: 10rem;
+      max-width: 18rem;
+      max-height: 10rem;
+    }
+  }
+}
